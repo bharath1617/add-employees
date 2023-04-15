@@ -1,0 +1,70 @@
+body{
+    background: #000;
+    color: white;
+    width: 90vw;
+    margin: auto;
+}
+.input-container{
+    display: flex;
+    gap: 10vw;
+}
+.input-container > div{
+    display: flex;
+    flex-flow: column wrap;
+}
+lable{
+   padding: 2vh 0;
+}
+input {
+    background-color: #000;
+    color: white;
+    border: none;
+    border: 1px solid grey;
+    padding:  1.5vh  10vw 1.5vh 0.5vw;
+}
+button{
+    margin: 6vh 0;
+    padding: 1.5vh 3vw;
+}
+.employees{
+   display: flex;
+   justify-content: space-between;
+   width: 35vw;
+   padding: 1.5vh 2vw;
+   margin-bottom: 3vh;
+   border: 2px solid gray;
+   border-radius: 10px;
+}
+.delete{
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: -0.6%;
+    cursor:pointer;
+}
+
+.delete:hover{
+    border: 2px solid gray;
+}
+
+
+@media (max-width: 700px) {
+    body{
+        width: 90vw;
+        margin: auto;
+    }
+    .input-container{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .employees{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+     }
+     input {
+        padding:  1.5vh  5vw 1.5vh .5vw;
+    }
+}
